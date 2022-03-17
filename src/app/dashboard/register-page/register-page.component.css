@@ -1,0 +1,137 @@
+.header{
+  width: 100%;
+  padding: 0.5rem 1rem;
+
+  background-color: #E03C59;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 768px){
+  .header{
+
+    justify-content: center;
+
+  }
+
+
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%
+}
+
+.side1{
+  display: flex;
+  float: left;
+  position: center;
+  width: 50%;
+  background-image: url("../../../assets/Pessoa.png");
+  background-size: cover;
+}
+.side2{
+  display: flex;
+  position: right;
+  width: 50%;
+  background-color: #E03C59;
+}
+
+.containerLogin{
+margin: 10% 10% ;
+padding: 10%;
+background-color: #E03C59;
+width: 80%;
+}
+
+.logoTitle{
+  margin: 0 auto;
+  background-image: url("./../../../assets/logo.png");
+  height: 30%;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.loginTitle{
+  font-size: 47px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin: 10% 0;
+  text-align: center;
+  font-size: 30;
+}
+
+
+.dataInput{
+position: relative;
+top: middle;
+width: 100%;
+}
+
+.userInput{
+  display: flex;
+  margin-bottom: 7%;
+  width: 100%;
+
+}
+input{
+  margin: 0 auto;
+  width: 80%;
+  background-color: #E03C59;
+  border-color: #ccc;
+  border: none;
+  border-bottom: solid #FFFFFF 2px;
+	line-height: 45px;
+	padding-left: 10px;
+
+  color: #FFFFFF;
+  font-size: 30;
+}
+
+input::placeholder{
+  color: #FFFFFF;
+  font-size: 30;
+
+}
+
+.buttonEnter{
+  cursor: pointer;
+  border-radius: 32px ;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  background-color: white;
+  color: #E03C59;
+  font-weight: bolder;
+  border: 2px solid #e7e7e7;
+}
+.buttonEnter:hover {
+  background-color: #e7e7e7;
+}
+
+
+@media screen and (max-width: 768px){
+  .side1{
+    display: none;
+  }
+
+  .side2{
+    width: 100%;
+  }
+}

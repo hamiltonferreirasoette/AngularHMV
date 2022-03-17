@@ -1,0 +1,190 @@
+.header{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #E03C59;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+
+.footer{
+position: bottom;
+width: 100%;
+display: flex;
+background-color: #E03C59;
+height:120px;
+}
+
+.info{
+margin: auto 0;
+position: left;
+color: #FFFFFF;
+font-size: 20px;
+padding: 0.5rem 3rem;
+}
+.contact{
+  font-weight: bolder;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.side1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(background-color);
+  height: auto;
+}
+
+.pageDoc{
+
+  margin: 10% auto 30% auto;
+}
+.logoSide{
+  position: relative;
+  margin: 0 auto;
+  display:flex;
+  background-image: url("../../../assets/logoSide.png");
+  background-size: cover;
+  height: 230px;
+  width: 230px;
+}
+.name{
+  position: relative;
+  margin: 0 auto;
+  color: #E03C59;
+  font-size: 80px ;
+  font-weight: bolder;
+
+}
+.page{
+  position: relative;
+  color: #C0324B;
+  font-size: 50px ;
+  font-weight: bolder;
+
+}
+.side2{
+  display: flex;
+  flex-direction:column ;
+  position: right;
+  width: 50%;
+  background-color: var(background-color);
+}
+
+.containerDoc{
+background-color: #EAEAEA;
+margin: 5% auto ;
+padding: 5%;
+width: 90%;
+height: 70%;
+border-radius: 40px;
+}
+.files{
+  margin-top: 10%;
+  width: 100%;
+  height: 40%;
+
+}
+.file{
+  float: left;
+  width: 33.3%;
+  text-align: center;
+  padding: 2% 5%;
+
+}
+.pdf{
+margin: 0 auto;
+  width: 30%;
+padding: 30%;
+background-position: center;
+background-size: cover;
+
+}
+.infoFile{
+
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.fileInput{
+  display: flex;
+  text-align: center;
+}
+
+
+
+.logoTitle{
+  margin: 0 auto;
+  background-image: url("./../../../assets/PDF.png");
+  height: 30%;
+  width: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.loginTitle{
+  font-size: 47px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin: 10% 0;
+  text-align: center;
+  font-size: 30;
+}
+
+
+
+
+.buttonAddExame{
+  cursor: pointer;
+  border-radius: 32px ;
+  padding: 10px 29%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  margin: 0 auto;
+  background-color: #E03C59;
+  color: #FFFFFF;
+  font-weight: bolder;
+  border: 2px solid #E03C59;
+}
+.buttonAddExame:hover {
+  background-color: #e7e7e7;
+}
+
+
+@media screen and (max-width: 768px){
+  .side1{
+    display: none;
+  }
+
+  .side2{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px){
+    .header{
+  
+      justify-content: center;
+  
+    }
+  
+  
+  }
+}

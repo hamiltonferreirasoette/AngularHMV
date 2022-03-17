@@ -1,0 +1,119 @@
+
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%
+
+}
+
+.side1{
+  display: flex;
+  float: left;
+  position: center;
+  width: 50%;
+  background-image: url("../../../assets/Pessoa.png");
+  background-size: cover;
+}
+.side2{
+  display: flex;
+  position: right;
+  width: 50%;
+  background-color: blueviolet;
+}
+
+.containerLogin{
+margin: 10% 10% ;
+padding: 10%;
+background-color: #E03C59;
+width: 80%;
+}
+
+.logoTitle{
+  margin: 0 auto;
+  background-image: url("./../../../assets/logo.png");
+  height: 30%;
+  width: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.loginTitle{
+  font-size: 47px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin: 10% 0;
+  text-align: center;
+  font-size: 30;
+}
+
+.userInput{
+  display: flex;
+  margin-bottom: 12%;
+  width: 100%;
+
+}
+input{
+  margin: 0 auto;
+  width: 80%;
+  background-color: #E03C59;
+  border-color: #ccc;
+  border: none;
+  border-bottom: solid #FFFFFF 2px;
+	line-height: 45px;
+	padding-left: 10px;
+
+  color: #FFFFFF;
+  font-size: 30;
+}
+
+input::placeholder{
+  color: #FFFFFF;
+  font-size: 30;
+
+}
+.buttonEnter{
+  cursor: pointer;
+  border-radius: 32px ;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  margin: 0 auto;
+  background-color: white;
+  color: #E03C59;
+  font-weight: bolder;
+  border: 2px solid #e7e7e7;
+}
+.buttonEnter:hover {
+  background-color: #e7e7e7;
+}
+
+
+.register{
+  position: relative;
+  font-size: 15px;
+  color: #FFFFFF;
+  margin: 10% 0;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+  .side1{
+    display: none;
+  }
+
+  .side2{
+    width: 100%;
+  }
+}

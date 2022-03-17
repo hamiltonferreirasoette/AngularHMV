@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="side1"></div>
+  <div class="side2">
+    <div class="containerLogin">
+      <!--<app-stock-card *ngFor="let stock of stocks"  [stock]="stock" ></app-stock-card>  -->
+      <div class="logoTitle"></div>
+      <div class="loginTitle">Wächter</div>
+      <form [formGroup]="form">
+        <div class="dataInput">
+          <div class="userInput">
+            <input type="text" formControlName="username" name="usuario" placeholder="USUARIO" />
+          </div>
+          <div class="userInput">
+            <input type="text"  formControlName="email" name="email" placeholder="Email" />
+          </div>
+          <div class="userInput">
+            <input type ="text"  formControlName="cpf" name="CPF" placeholder="CPF" />
+          </div>
+          <div class="userInput">
+            <input type="password"  formControlName="password" name="senha" placeholder="SENHA" />
+          </div>
+          <div class="userInput">
+            <button class="buttonEnter" (click)="register()">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
