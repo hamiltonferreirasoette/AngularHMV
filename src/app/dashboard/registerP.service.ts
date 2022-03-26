@@ -6,7 +6,7 @@ import Stock, { Register } from '../shared/models/stock-model';
 @Injectable({
   providedIn: 'root'
 })
-export class RegisterService {
+export class RegisterPService {
 
   readonly baseUrl ='https://wachter-users-api.herokuapp.com'
 

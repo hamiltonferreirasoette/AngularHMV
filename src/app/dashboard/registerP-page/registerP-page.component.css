@@ -146,15 +146,6 @@ input::placeholder{
   font-size: 16px;
 }
 
-.PatientRegister{
-  display: none;
-}
-
-.DoctorRegister{
-  display: show;
-}
-
-
 @media screen and (max-width: 768px){
   .side1{
     display: none;

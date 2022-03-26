@@ -5,11 +5,11 @@
     <div class="containerLogin">
       <!--<app-stock-card *ngFor="let stock of stocks"  [stock]="stock" ></app-stock-card>  -->
       <div class="logoTitle"></div>
-      <div class="loginTitle" >  
-          <div class = "DoctorRegister"> Wächter Doctor</div>
+      <div class="loginTitle" >
+          <div class = "PatientRegister">Wächter Paciente</div>  
       </div>
       <form [formGroup]="form">
-        <div class="dataInput" class = DoctorRegister>
+        <div class="dataInput" class = PatientRegister>
           <div class="userInput">
             <input class="userInput1" type="text" formControlName="name" name="usuario" placeholder="Usuario" />
             <input class="userInput2" type="password"  formControlName="password" name="senha" placeholder="Senha" />
@@ -28,26 +28,23 @@
               <option value="OTHER">Outro</option>
               <option value="Gender">Gender</option>
             </select>
-            <input class="userInput2" type ="text"  formControlName="crm" name="CRM" placeholder="CRM" />
-          </div>
-          <div class="userInput">
-            <input class="userInput1" type ="text"  formControlName="birthday" name="Data de Nascimento" placeholder="Data de Nascimento" />
             <input class="userInput2" type ="text"  formControlName="phones" name="Telefone" placeholder="Telefone" />
           </div>
           <div class="userInput">
-            <input type ="text"  formControlName="specialties" name="specialties" placeholder="Specialties" />
+            <input class="userInput1" type ="text"  formControlName="birthday" name="Data de Nascimento" placeholder="Data de Nascimento" />
+            <input class="userInput2" type ="text"  formControlName="motherName" name="motherName" placeholder="MotherName" />
+
           </div>
           <div class="userInput">
-            <input type ="text"  formControlName="agreements" name="agreements" placeholder="agreements" />
+            <input type ="text"  formControlName="diseases" name="diseases" placeholder="Diseases" />
           </div>
+          
           <div class="userInput">
             <button class="buttonEnter" (click)="register()">Cadastrar</button>
           </div>
           <div><a  href="/login" class="login">Inicio</a></div> 
-
         </div>
       </form>
-
     </div>
   </div>
   </div>

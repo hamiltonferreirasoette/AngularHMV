@@ -8,10 +8,16 @@ import { SharedModule } from './shared/shared.module';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt'
 import { RegisterModule } from './dashboard/register.module';
+import { RegisterPModule } from './dashboard/registerP.module';
+
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DocumentModule } from './dashboard/document.module';
 import { LoginModule } from './dashboard/login.module';
+import { SelectModule } from './dashboard/select.module';
+
+
 
 registerLocaleData(localePt);
 
@@ -21,9 +27,11 @@ registerLocaleData(localePt);
   ],
   imports: [
     BrowserModule,
+    SelectModule,
     AppRoutingModule,
     DashboardModule,
     RegisterModule,
+    RegisterPModule,
     DocumentModule,
     LoginModule,
     SharedModule,

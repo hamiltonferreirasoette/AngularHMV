@@ -4,6 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  height: 100%;
 }
 
 .side1{
@@ -18,15 +19,15 @@
 }
 .side2{
   display: flex;
-  position: right;
+  margin: 0 auto;
   width: 70%;
   height: 100%;
   background-color: #e03c5a3b;
 }
 
 .containerLogin{
-margin: 2% auto ;
-padding: 2%;
+margin: auto auto ;
+padding: 10%;
 background-color: #E03C59;
 width: 80%;
 }
@@ -59,6 +60,7 @@ width: 80%;
 position: relative;
 top: middle;
 width: 100%;
+margin: auto;
 }
 
 .userInput{
@@ -117,15 +119,15 @@ input::placeholder{
 
 }
 
-.buttonEnter{
+.buttonSelect{
   cursor: pointer;
   border-radius: 32px ;
   color: white;
-  padding: 16px 32px;
+  padding: 30px 90px;
   text-align: center;
   text-decoration: none;
   display: flex;
-  margin: 15% auto;
+  margin: 5% auto;
   
   font-size: 16px;
   -webkit-transition-duration: 0.4s; 
@@ -143,7 +145,7 @@ input::placeholder{
   width: 100%;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .PatientRegister{

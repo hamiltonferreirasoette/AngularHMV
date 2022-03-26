@@ -6,9 +6,9 @@ import Stock, { Register } from '../shared/models/stock-model';
 @Injectable({
   providedIn: 'root'
 })
-export class RegisterService {
+export class SelectService {
 
-  readonly baseUrl ='https://wachter-users-api.herokuapp.com'
+  readonly baseUrl ='https://boot-camp-santander-dio.herokuapp.com/bootcamp'
 
   constructor(private http: HttpClient) { }
 
@@ -16,10 +16,11 @@ export class RegisterService {
     return this.http.get<Stock[]>(`${this.baseUrl}/stock`).toPromise();
   }
 
-  
-Register(obj:Register):Observable<Register>{
 
-  return this.http.post<Register>(`${this.baseUrl}/patients/`,obj);
-}
+
+//login(obj:Login):Observable<Login>{
+
+//  return this.http.post<Login>(`${this.baseUrl}/login`,obj);//.pipe(takeUntil((s: Register) => s ))
+//}
 
 }

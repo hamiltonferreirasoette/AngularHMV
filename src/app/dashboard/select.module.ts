@@ -1,20 +1,21 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { SelectComponent } from './select-page/select-page.component';
 
 
 @NgModule({
   declarations: [
-    DashboardPageComponent,
+    SelectComponent,
   ],
   imports: [
     CommonModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   exports: [
-    DashboardPageComponent
+    SelectComponent
   ],
 })
-export class DashboardModule { }
+export class SelectModule { }
